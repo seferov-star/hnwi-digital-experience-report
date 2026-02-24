@@ -1,20 +1,22 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# HNWI Digital Experience Report
 
-# Run and deploy your AI Studio app
+Production URL:
 
-This contains everything you need to run your app locally.
+`https://seferov-star.github.io/hnwi-digital-experience-report/`
 
-View your app in AI Studio: https://ai.studio/apps/68699021-191b-4fb0-a6c8-437198ba95a6
+## Local run
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
+Prerequisite: Node.js 20+
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+   `npm ci`
+2. Start dev server:
    `npm run dev`
+
+## Deployment
+
+Deployment is fully automated via GitHub Actions workflow:
+
+`.github/workflows/deploy-pages.yml`
+
+Any push to `main` triggers build and publish to GitHub Pages.
